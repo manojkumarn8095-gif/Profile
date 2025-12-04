@@ -349,4 +349,20 @@ footer p {
         font-size: 1.5rem;
         padding-left: 2rem;
     }
+; /* Constrain the image size */
+    }
+
+    .profile-img {
+        width: 300px; /* Adjust image size */
+        height: 300px;
+    }
+
+    .nav-links {
+        display: none; /* Optionally hide nav links on mobile; requires a mobile menu implementation */
+    }
+
+    .logo{
+        font-size: 1.5rem;
+        padding-left: 2rem;
+    }
 }
