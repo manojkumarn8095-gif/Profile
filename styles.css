@@ -118,7 +118,7 @@ body {
     margin-bottom: 1.5rem; 
     line-height: 1.2;
     background: linear-gradient(45deg, var(--accent) 30%, #ffffff 70%);
-    background-clip: text;  
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -164,6 +164,44 @@ body {
 
 .cta-button:hover::before {
     transform: translateX(0); 
+}
+
+/* --- Contact Details Styling --- */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--darker-bg);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 3rem;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+}
+
+.contact-details i {
+    color: var(--accent);
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.contact-details a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-details a:hover {
+    color: var(--accent);
 }
 
 
@@ -243,43 +281,6 @@ body {
     padding: 5rem 5%;
     text-align: center;
 }
-/* --- Contact Details Styling --- */
-.contact-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 2rem;
-    background: var(--darker-bg);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 3rem;
-}
-
-.contact-details p {
-    font-size: 1.1rem;
-    color: var(--text);
-    display: flex;
-    align-items: center;
-}
-
-.contact-details i {
-    color: var(--accent);
-    margin-right: 0.8rem;
-    font-size: 1.2rem;
-}
-
-.contact-details a {
-    color: var(--text);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.contact-details a:hover {
-    color: var(--accent);
-}
 
 /* --- Footer --- */
 footer {
@@ -344,24 +345,4 @@ footer p {
     .nav-links {
         display: none; /* Optionally hide nav links on mobile; requires a mobile menu implementation */
     }
-
-    .logo{
-        font-size: 1.5rem;
-        padding-left: 2rem;
-    }
-; /* Constrain the image size */
-    }
-
-    .profile-img {
-        width: 300px; /* Adjust image size */
-        height: 300px;
-    }
-
-    .nav-links {
-        display: none; /* Optionally hide nav links on mobile; requires a mobile menu implementation */
-    }
-
-    .logo{
-        font-size: 1.5rem;
-        padding-left: 2rem;
-    }
+}
