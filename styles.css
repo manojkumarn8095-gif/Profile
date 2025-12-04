@@ -118,7 +118,7 @@ body {
     margin-bottom: 1.5rem; 
     line-height: 1.2;
     background: linear-gradient(45deg, var(--accent) 30%, #ffffff 70%);
-    -webkit-background-clip: text;
+    background-clip: text;  
     -webkit-text-fill-color: transparent;
 }
 
@@ -365,4 +365,3 @@ footer p {
         font-size: 1.5rem;
         padding-left: 2rem;
     }
-}
